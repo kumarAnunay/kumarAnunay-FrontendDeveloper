@@ -1,4 +1,4 @@
-import "./header.css";
+import "./Header.css";
 import image1 from "../../assets/section1.jpg";
 import image2 from "../../assets/section2.jpg";
 import image3 from "../../assets/section3.jpg";
