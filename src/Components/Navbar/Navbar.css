@@ -40,7 +40,6 @@
     border: 1px solid #fff;
     color: #fff;
     padding: 3px 2px;
-    width: auto;
     max-width: 100%;
     word-wrap: break-word;
 }
@@ -107,6 +106,7 @@
     .navList {
         gap: 10px !important;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -121,5 +121,28 @@
 
     .rightList {
         gap: 10px !important
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .searchBox {
+        position: relative;
+        right: 70px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cardBox {
+        grid-template-columns: 1fr;
+        padding: 60px 30px;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width: 800px) {
+    .cardBox {
+        grid-template-columns: 1fr 1fr;
+        padding: 60px 30px;
+        padding-top: 100px;
     }
 }

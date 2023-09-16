@@ -130,7 +130,7 @@ const Navbar = () => {
         </div>
         <div className=" rightList flex gap-5 items-center">
           {searchInputVisible && (
-            <div className="pt-[30px]">
+            <div className=" searchBox pt-[30px]">
               <div className="searchContainer">
                 <input
                   type="text"
@@ -179,14 +179,14 @@ const Navbar = () => {
       </nav>
 
       <div className="hidden" ref={searchContainerRef}>
-        <div className="searchSuggestionsContainer">
+        <div className="cardBox searchSuggestionsContainer">
           {searchData && searchData.length > 0 ? (
             searchData.map((item) => (
               <div
                 key={item?.capsule_serial}
                 className="card border-2 border-solid border-[grey] rounded shadow-[1px_1px_3px_rgba(0,0,0,0.7)]"
               >
-                <img src={space} alt="Rocket" className="h-[50%]" />
+                <img src={space} alt="Rocket" className="h-[50%] w-[100%]" />
                 <div className="p-[20px] flex flex-col gap-1.5 font-semibold">
                   <h1>
                     Status:

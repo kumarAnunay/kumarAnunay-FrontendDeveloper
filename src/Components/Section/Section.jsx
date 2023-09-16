@@ -72,7 +72,7 @@ const Section = () => {
                 <img
                   src={space}
                   alt="Rocket"
-                  className="h-[50%] cursor-[pointer]"
+                  className="h-[50%] w-[100%] cursor-[pointer]"
                   onClick={() => openDetails(item)}
                 />
                 <div className="p-[20px] flex flex-col gap-1.5 font-semibold">
