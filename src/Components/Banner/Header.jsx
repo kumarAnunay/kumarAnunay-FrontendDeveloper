@@ -51,7 +51,7 @@ const Section1 = () => {
         className="h-full bg-[center_center] bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${bannerImage[currentIndex].image})` }}
       ></div>
-      <div className="w-6/12 text-left absolute left-[50px] bottom-[15%]">
+      <div className="sectionContent text-left absolute bottom-[15%]">
         <p className="pTag">{bannerImage[currentIndex].pTag}</p>
         <h1 className="hTag">{bannerImage[currentIndex].hTag}</h1>
         <button

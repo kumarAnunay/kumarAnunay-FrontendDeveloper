@@ -20,3 +20,15 @@
 .ytIcon:hover {
     color: red !important;
 }
+
+@media screen and (max-width: 450px) {
+    .footer h2 {
+        display: none;
+    }
+
+    .footerSectionIcons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
