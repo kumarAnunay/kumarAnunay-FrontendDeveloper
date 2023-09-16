@@ -2,8 +2,10 @@ import React from "react";
 import { Close } from "@mui/icons-material";
 import { Tooltip } from "@mui/material";
 import "./Navbar.css";
+import { useNavigate } from "react-router-dom";
 
 const Drawer = ({ isOpen, closeDrawer }) => {
+  const navigate = useNavigate();
   return (
     <>
       {isOpen && (
@@ -21,7 +23,7 @@ const Drawer = ({ isOpen, closeDrawer }) => {
               <li className="w-full flex justify-end border-b-2 border-b-[#252525] border-solid pb-[5px]">
                 <span
                   className=" cursor-[pointer]"
-                  onClick={() => window.alert("Mission")}
+                  onClick={() => navigate("/mission")}
                 >
                   Mission
                 </span>
@@ -29,7 +31,7 @@ const Drawer = ({ isOpen, closeDrawer }) => {
               <li className="w-full flex justify-end border-b-2 border-b-[#252525] border-solid pb-[5px]">
                 <span
                   className=" cursor-[pointer]"
-                  onClick={() => window.alert("Launches")}
+                  onClick={() => navigate("/launches")}
                 >
                   Launches
                 </span>
@@ -37,7 +39,7 @@ const Drawer = ({ isOpen, closeDrawer }) => {
               <li className="w-full flex justify-end border-b-2 border-b-[#252525] border-solid pb-[5px]">
                 <span
                   className=" cursor-[pointer]"
-                  onClick={() => window.alert("Carrers")}
+                  onClick={() => navigate("/carrers")}
                 >
                   Carrers
                 </span>
@@ -45,7 +47,7 @@ const Drawer = ({ isOpen, closeDrawer }) => {
               <li className="w-full flex justify-end border-b-2 border-b-[#252525] border-solid pb-[5px]">
                 <span
                   className=" cursor-[pointer]"
-                  onClick={() => window.alert("Updates")}
+                  onClick={() => navigate("/updates")}
                 >
                   Updates
                 </span>
@@ -53,7 +55,7 @@ const Drawer = ({ isOpen, closeDrawer }) => {
               <li className="w-full flex justify-end border-b-2 border-b-[#252525] border-solid pb-[5px]">
                 <span
                   className=" cursor-[pointer]"
-                  onClick={() => window.alert("Shop")}
+                  onClick={() => navigate("/shop")}
                 >
                   Shop
                 </span>
@@ -61,7 +63,7 @@ const Drawer = ({ isOpen, closeDrawer }) => {
               <li className="w-full flex justify-end border-b-2 border-b-[#252525] border-solid pb-[5px]">
                 <span
                   className=" cursor-[pointer]"
-                  onClick={() => window.alert("About us")}
+                  onClick={() => navigate("/about-us")}
                 >
                   About us
                 </span>

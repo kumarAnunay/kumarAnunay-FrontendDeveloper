@@ -62,3 +62,8 @@
         transform: rotate(360deg);
     }
 }
+
+::selection {
+    color: palevioletred;
+    background: skyblue;
+}

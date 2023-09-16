@@ -117,15 +117,8 @@ const Navbar = () => {
             type="none"
             className="list navList flex items-center gap-8 text-[white] font-[700] cursor-[pointer]"
           >
-            <li
-              onClick={() => {
-                navigate("/");
-                window.location.reload();
-              }}
-            >
-              Home
-            </li>
-            <li onClick={() => window.location.reload()}>Capsules</li>
+            <li onClick={() => navigate("/")}>Home</li>
+            <li onClick={() => navigate("/capsules")}>Capsules</li>
           </ul>
         </div>
         <div className=" rightList flex gap-5 items-center">

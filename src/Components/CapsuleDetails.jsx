@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer/Footer";
 import image from "../assets/rocket.jpg";
 import SearchContext from "./DataProvider";
 import { useContext } from "react";
@@ -61,6 +62,7 @@ const CapsuleDetails = () => {
           </h1>
         </div>
       )}
+      <Footer />
     </>
   );
 };
