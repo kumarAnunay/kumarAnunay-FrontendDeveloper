@@ -67,3 +67,9 @@
     color: palevioletred;
     background: skyblue;
 }
+
+@media screen and (max-width: 650px) {
+    .pageImage {
+        object-fit: cover;
+    }
+}

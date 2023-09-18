@@ -3,7 +3,9 @@ import { Close } from "@mui/icons-material";
 import { Tooltip } from "@mui/material";
 
 export const Modal = ({ isOpen, onClose, card }) => {
-  if (!isOpen) return null;
+  if (!isOpen) {
+    return null;
+  }
 
   return (
     <div className="modal-overlay">

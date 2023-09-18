@@ -41,7 +41,7 @@ const Drawer = ({ isOpen, closeDrawer }) => {
                   className=" cursor-[pointer]"
                   onClick={() => navigate("/carrers")}
                 >
-                  Carrers
+                  Careers
                 </span>
               </li>
               <li className="w-full flex justify-end border-b-2 border-b-[#252525] border-solid pb-[5px]">

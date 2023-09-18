@@ -6,7 +6,7 @@ const ContentPage = ({ image }) => {
     <>
       <Navbar />
       <div className="w-full h-screen flex justify-center items-center bg-[palevioletred]">
-        <img src={image} alt="image" className="w-full h-full" />
+        <img src={image} alt="image" className="pageImage w-full h-full" />
       </div>
       <Footer />
     </>

@@ -6,6 +6,7 @@ import { Modal } from "./Modal/Modal";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
+import image from "../assets/spaceBg.png";
 import "./Section/Section.css";
 
 const Capsules = () => {
@@ -42,7 +43,18 @@ const Capsules = () => {
             <div className="loader"></div>
           </div>
         ) : (
-          <div className=" cardContainer w-full h-auto grid grid-cols-3 gap-[50px] p-[80px] bg-[#F1EFEF]">
+          <div
+            className=" cardContainer w-full h-auto grid grid-cols-3 gap-[50px] p-[80px]"
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundAttachment: "fixed",
+              overflowY: "auto",
+              height: "100vh",
+            }}
+          >
             {data?.map((item, index) => {
               return (
                 <div
