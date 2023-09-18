@@ -27,7 +27,7 @@ const Navbar = () => {
   const { setSearching, data } = useContext(SearchContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const [selectedFilter, setSelectedFilter] = useState("status");
+  const [selectedFilter, setSelectedFilter] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,15 +72,20 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    if (searchInput) {
+      filterData();
+    }
+  }, [searchInput]);
+
   const inputValueHandler = (event) => {
     setSearchInput(event.target.value);
-    filterData();
-    if (event.target.value.length > 1) {
+    if (event.target.value) {
+      if (selectedFilter === "") {
+        return window.alert("Select Filter");
+      }
       searchContainerRef.current.style.display = "block";
       setSearching(false);
-      if (searchInput.length() >= 2) {
-        filterData();
-      }
     } else {
       searchContainerRef.current.style.display = "none";
       setSearchData([]);
@@ -147,9 +152,10 @@ const Navbar = () => {
               <div>
                 <select
                   value={selectedFilter}
-                  onChange={(e) => setSelectedFilter(e.target.value)}
+                  onChange={(event) => setSelectedFilter(event.target.value)}
                   className="searchDropdown"
                 >
+                  <option value="">Select Filter</option>
                   <option value="status">Status</option>
                   <option value="type">Type</option>
                   <option value="capsule_id">Capsule Id</option>

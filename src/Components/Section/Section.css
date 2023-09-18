@@ -1,5 +1,6 @@
 .cardContainer {
     display: grid;
+    padding-top: 100px;
 }
 
 .card img {
@@ -60,13 +61,13 @@
 @media screen and (max-width: 500px) {
     .cardContainer {
         grid-template-columns: 1fr;
-        padding: 60px 30px;
+        padding: 90px 30px;
     }
 }
 
 @media screen and (min-width:501px) and (max-width: 800px) {
     .cardContainer {
         grid-template-columns: 1fr 1fr;
-        padding: 60px 30px;
+        padding: 90px 30px;
     }
 }
