@@ -51,8 +51,7 @@ const Capsules = () => {
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundAttachment: "fixed",
-              overflowY: "auto",
-              height: "100vh",
+              minHeight: "100vh",
             }}
           >
             {data?.map((item, index) => {
